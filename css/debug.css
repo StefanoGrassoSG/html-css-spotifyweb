@@ -4,13 +4,13 @@
 
 .debug .main-container {
     border: 2px dashed red;
-    background-color: black;
+    background-color: lightgray;
 }
 
 
 .debug .aside-container {
     border: 2px dashed blue;
-    background-color: lightgray;
+    background-color: black;
 }
 
 .debug .foot-container {

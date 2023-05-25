@@ -55,6 +55,11 @@
     height: calc(100vh - 6.25rem);
 }
 
+.aside-row {
+    flex-direction: column;
+    display: flex;
+}
+
 /****************
      FOOTER
 ****************/
@@ -65,3 +70,5 @@
     display: flex;
     justify-content: space-between; 
 }
+
+

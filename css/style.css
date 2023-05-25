@@ -16,6 +16,61 @@
     margin: 0 -0.9375rem;
 }
 
+/********************
+         ASIDE
+********************/
+
+.aside-container {
+    padding: 1.25rem 1.25rem;
+}
+
+.aside-container .aside-row img {
+    height: 40px;
+    max-width: 131px;
+}
+
+.aside-col {
+    padding: .625rem 0;
+}
+
+.aside-col ul li {
+    color: var(--main-text-color);
+}
+
+.aside-col .fa-ul {
+    margin-left: 1.875rem;
+    padding: .625rem 0;
+}
+
+.aside-row h3 {
+    color: var(--main-text-color);
+}
+
+.fa-li.special {
+    background-color: rgb(190, 195, 203);
+    width: 2.1875rem;
+    height: 2.1875rem;
+    line-height: 35px;
+}
+
+.text-li {
+    margin-left: .3125rem;
+}
+
+.text-li.special {
+    line-height: 2.1875rem;
+    margin-left: .9375rem;
+}
+
+.no-style {
+    list-style: none;
+    padding: .625rem 0;
+}
+
+.no-style li {
+    padding: .625rem 0;
+}
+
 
 
 /*********************
