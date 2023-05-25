@@ -22,3 +22,13 @@
     border: 2px dashed green;
     background-color: brown;
 }
+
+.debug .main-row .cards {
+    border: 2px dashed pink;
+    background-color: blueviolet;
+    height: 18.75rem;
+}
+
+.debug .foot-container > * {
+    border: 2px dashed red;
+}

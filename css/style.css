@@ -6,10 +6,15 @@
 @import "colors.css";
 @import "debug.css";
 
-/********************
-        MAIN
-********************/
+/*********************
+      HEADER
+*********************/
 
+.header-container {
+    position: sticky;
+    top: 0;
+    margin: 0 -0.9375rem;
+}
 
 
 
@@ -23,4 +28,53 @@
 
 .nav-container ul li {
     display: inline-block;
+}
+
+/********************
+        MAIN
+********************/
+
+.main-container h2 {
+    color: var(--main-text-color);
+}
+
+.main-row {
+    margin: 0 -.625rem;
+}
+
+.main-row > * {
+    margin: 0 .625rem;
+}
+
+/******************
+ MEDIA-QUERY-TABLET
+*******************/
+
+@media screen and (max-width: 68.75rem) {
+
+    .main-row .cards {
+        width: calc((100% / 4) - 1.25rem) ;
+    }
+}
+
+/******************
+ MEDIA-QUERY-MOBILE
+*******************/
+
+@media screen and (max-width: 43.75rem) {
+
+    .main-row .cards {
+        width: calc((100% / 2) - 1.25rem) ;
+    }
+}
+
+/************************
+ MEDIA-QUERY-MOBILE-SMALL
+*************************/
+
+@media screen and (max-width: 37.5rem) {
+
+    .aside-container {
+        width: 4.375rem;
+    }
 }
