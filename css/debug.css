@@ -1,0 +1,24 @@
+/**************
+     DEBUG
+*************/
+
+.debug .main-container {
+    border: 2px dashed red;
+    background-color: black;
+}
+
+
+.debug .aside-container {
+    border: 2px dashed blue;
+    background-color: lightgray;
+}
+
+.debug .foot-container {
+    border: 2px dashed yellow;
+    background-color: aqua;
+}
+
+.debug .header-container {
+    border: 2px dashed green;
+    background-color: brown;
+}

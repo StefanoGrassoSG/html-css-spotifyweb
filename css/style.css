@@ -1,0 +1,26 @@
+/********************
+       IMPORT
+********************/      
+@import "reset.css";
+@import "general.css";
+@import "colors.css";
+@import "debug.css";
+
+/********************
+        MAIN
+********************/
+
+
+
+
+/*********************
+      NAV-BAR-CENTER
+*********************/
+
+.nav-container  {
+    text-align: center;
+}
+
+.nav-container ul li {
+    display: inline-block;
+}
