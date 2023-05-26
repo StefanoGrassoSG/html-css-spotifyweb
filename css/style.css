@@ -103,20 +103,14 @@ button:hover {
     color: var(--main-text-color);
 }
 
-.fa-li.special {
+.fa-plus {
     background-color: rgb(190, 195, 203);
-    width: 2.1875rem;
-    height: 2.1875rem;
-    line-height: 35px;
+    color: black;
+    padding: .5rem;
 }
 
-.text-li {
-    margin-left: .3125rem;
-}
-
-.text-li.special {
-    line-height: 2.1875rem;
-    margin-left: .9375rem;
+.playlist {
+    color: rgb(190, 195, 203);
 }
 
 .no-style {
@@ -145,11 +139,32 @@ button:hover {
     text-decoration: none;
 }
 
+.playlist  * {
+    margin: .625rem 0;
+}
+
 /**********************
       HOVER-ASIDE
 **********************/
 
-.aside-col a:hover{
+.aside-col ul a li:hover {
+    color: var(--main-text-color);
+}
+
+.aside-col.end span:hover {
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.aside-col .fa-li.special:hover {
+    color: var(--main-text-color);
+}
+
+.aside-col a span:hover .fa-plus {
+    background-color: var(--main-text-color);
+}
+
+.aside-col a span:hover .text-play {
     color: var(--main-text-color);
 }
 
@@ -278,6 +293,7 @@ button:hover {
     height: .25rem;
     border-radius: .1875rem;
     background-color: lightgray;
+    position: relative;
 }
 
 .bar {
@@ -299,6 +315,7 @@ button:hover {
     height: .25rem;
     background-color: lightgray;
     border-radius: .1875rem;
+    position: relative;
 }
 
 
@@ -336,6 +353,83 @@ button:hover {
 
 .foot-right > i {
     margin: 0 .625rem;
+}
+
+.foot-right i {
+    color: rgb(190, 195, 203);
+}
+
+.foot-center .progress-center::after {
+    content: "";
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -0.1875rem;
+}
+
+.foot-right .progress::after {
+    content: "";
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -0.1875rem;
+}
+
+/*****************
+   FOOTER-HOVER
+*****************/
+
+.foot-left .text-image span:hover {
+    color: var(--main-text-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot-left .icons-left > *:hover {
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.foot-center .icons-center > *:hover {
+    cursor: pointer;
+}
+
+.foot-center .icons-center .fa-circle-play:hover {
+    transform: scale(1.2);
+    transition: all ease-in-out 0.2s;
+}
+
+.foot-right i:hover {
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.foot-center .bar:hover, .foot-right .volume-bar {
+    cursor: pointer;
+}
+
+.foot-center .bar:hover .progress-center {
+    background-color: lime;
+}
+
+.foot-center .bar:hover .progress-center::after {
+    display: block;
+}
+
+.foot-right .volume-bar:hover .progress {
+    background-color: lime;
+}
+
+.foot-right .volume-bar:hover .progress::after {
+    display: block;
 }
 
 /******************
