@@ -46,6 +46,15 @@
     width: calc((100% / 6) - 1.25rem) ;
 }
 
+.main-row h3 {
+    color: var(--main-text-color);
+    margin: .625rem 0;
+}
+
+.main-row span {
+    color: var( --secondary-text-color);
+}
+
 /****************
       ASIDE
 ****************/

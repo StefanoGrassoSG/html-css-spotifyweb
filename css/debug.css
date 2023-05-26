@@ -3,32 +3,30 @@
 *************/
 
 .debug .main-container {
-    border: 2px dashed red;
-    background-color: lightgray;
+    
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 
 .debug .aside-container {
-    border: 2px dashed blue;
+  
     background-color: black;
 }
 
 .debug .foot-container {
-    border: 2px dashed yellow;
-    background-color: aqua;
+ 
+   
 }
 
 .debug .header-container {
-    border: 2px dashed green;
-    background-color: brown;
+   
+   
 }
 
 .debug .main-row .cards {
-    border: 2px dashed pink;
-    background-color: blueviolet;
-    height: 18.75rem;
+    
 }
 
 .debug .foot-container > * {
-    border: 2px dashed red;
+   
 }
