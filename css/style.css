@@ -16,6 +16,7 @@
     margin: 0 -0.9375rem;
     background-color: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
+    z-index: 1;
 }
 
 button {
@@ -81,6 +82,31 @@ button:hover {
     position: relative;
 }
 
+.icons-bottom  {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-container .icons-mobile .icons > * {
+    color: var(--secondary-text-color);
+    margin-bottom: 1.875rem;
+}
+
+.aside-container .icons-mobile .icons-bottom {
+    margin-bottom: 20px;
+}
+
+.aside-container .icons-mobile .icons .fa-spotify {
+    color: var(--main-text-color);
+}
+
+.aside-container .icons-mobile .icons-bottom > * {
+    margin-top: 1.875rem;
+}
+
 .aside-container .aside-row img {
     height: 40px;
     max-width: 131px;
@@ -90,6 +116,10 @@ button:hover {
     padding: .625rem 0;
 }
 
+.aside-col .fa-ul li:nth-of-type(2) {
+    margin: .9375rem 0;
+}
+
 .aside-col ul li, .aside-col.end {
     color: var( --secondary-text-color);
 }
@@ -97,6 +127,10 @@ button:hover {
 .aside-col .fa-ul {
     margin-left: 1.875rem;
     padding: .625rem 0;
+}
+
+.aside-col .fa-ul li > * {
+    color: rgb(190, 195, 203);    
 }
 
 .aside-row h3 {
@@ -124,15 +158,11 @@ button:hover {
     padding: .625rem 0;
 }
 
-.aside-col.end {
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-}
 
 .aside-col.end hr {
     margin: .625rem 0;
     border-color: rgb(190, 195, 203);
+    width: 90%;
 }
 
 .aside-col a {
@@ -146,6 +176,15 @@ button:hover {
 /**********************
       HOVER-ASIDE
 **********************/
+
+.aside-col ul li:hover {
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.aside-col ul li:hover i {
+    color: var(--main-text-color);
+}
 
 .aside-col ul a li:hover {
     color: var(--main-text-color);
@@ -260,6 +299,8 @@ button:hover {
 .foot-container {
     position: fixed;
     bottom: 0;
+    right: 0;
+    left: 0;
     background-color: rgb(40, 38, 38);
 }
 
@@ -269,10 +310,20 @@ button:hover {
     padding: 1.25rem .625rem;
 }
 
+.foot-right .volume-bar {
+    flex-shrink: 0;
+}
+
 .foot-right {
     display: flex;
     align-items: center;
     padding: 1.25rem .625rem;
+    min-width: 1px;
+}
+
+.foot-center {
+    display: flex;
+    flex-direction: column;
 }
 
 .foot-left img {
@@ -281,8 +332,16 @@ button:hover {
     margin-right: 1.25rem;
 }
 
+.foot-left .text-image h3 {
+    font-size: .9375rem;
+}
+
+.foot-left .text-image span {
+    font-size: .75rem;
+}
+
 .volume-bar {
-    width: 9.375rem;
+    width: 6.25rem;
     height: .25rem;
     background-color: grey;
     border-radius: .1875rem;
@@ -303,7 +362,7 @@ button:hover {
 }
 
 .progress-bar-center {
-    width: 43.75rem;
+    width: 100%;
     height: .25rem;
     background-color: grey;
     border-radius: .1875rem;
@@ -339,7 +398,7 @@ button:hover {
 }
 
 .foot-left .icons-left {
-    margin-left: 1.875rem;
+    margin-left: 1.25rem;
 }
 
 .foot-left span {
@@ -452,6 +511,11 @@ button:hover {
     .main-row .cards {
         width: calc((100% / 2) - 1.25rem) ;
     }
+
+    .foot-right > i {
+        margin: .3125rem;
+    }
+
 }
 
 /************************
@@ -460,7 +524,55 @@ button:hover {
 
 @media screen and (max-width: 37.5rem) {
 
+    .icons-mobile {
+        display: block;
+    }
+
     .aside-container {
+        width: 3.125rem;
+        padding: .625rem .9375rem;
+    }
+
+    .foot-left .text-image h3 {
+        font-size: .625rem;
+    }
+
+    .foot-left .icons-left > * {
+        font-size: .875rem;
+    }
+
+    .foot-left .text-image span {
+        font-size: .5rem;
+        display: inline-block;
+    }
+
+    .foot-left .icons-left {
+        margin-left: .625rem;
+    }
+
+    .foot-left {
+        padding-right: 0;
+    }
+
+    .foot-left img {
+        margin-right: .625rem;
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    .foot-right > i {
+        font-size: .875rem;
+    }
+
+    .foot-right .volume-bar {
         width: 4.375rem;
+    }
+
+    .icons-center > * {
+        margin: .3125rem;
+    }
+
+    .aside-container .aside-row {
+        display: none;
     }
 }
