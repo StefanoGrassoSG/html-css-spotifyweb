@@ -80,20 +80,17 @@
       ASIDE
 ****************/
 
-.aside-container {
+.aside{
     width: 15.625rem;
     height: calc(100vh - 6.25rem);
-}
-
-.aside-row {
     flex-direction: column;
     display: flex;
-    height: 100%;
-    justify-content: space-between;
+    background-color: black;
 }
 
 .icons-mobile {
     display: none;
+    height: calc(100vh - 6.25rem);
 }
 
 .icons-mobile .icons {
